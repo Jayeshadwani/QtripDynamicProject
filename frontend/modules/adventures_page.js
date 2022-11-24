@@ -1,9 +1,6 @@
 
 import config from "../conf/index.js";
 
-// console.log(getCityFromURL("http://3.109.101.134:8081/pages/adventures/city?=bengaluru"))
-
-// console.log("Hii")
 //Implementation to extract city from query params
 function getCityFromURL(search) {
   // TODO: MODULE_ADVENTURES

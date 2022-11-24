@@ -2,18 +2,12 @@ import config from "../conf/index.js";
 
 async function init() {
   //Fetches list of all cities along with their images and description
-  // console.log(config.backendEndpoint+"/cities")
   let cities = await fetchCities();
-
-
-  // console.log("HEllo from init")
 
   //Updates the DOM with the cities
   cities.forEach((key) => {
     addCityToDOM(key.id, key.city, key.description, key.image);
   });
-
-  // console.log(cities)
 }
 
 //Implementation of fetch call
