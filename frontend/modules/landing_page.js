@@ -37,7 +37,8 @@ function addCityToDOM(id, city, description, image) {
   
   // Create elements in this structure tile -> tile-text img
   let a = document.createElement("a")
-  a.setAttribute("href",`/pages/adventures/city?=${id}`)
+  // console.log(id)
+  a.setAttribute("href",`pages/adventures/?city=${id}`)
   a.setAttribute("id",id)
 
   let tile = document.createElement("div")
