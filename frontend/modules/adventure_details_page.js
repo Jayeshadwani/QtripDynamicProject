@@ -52,16 +52,16 @@ function addAdventureDetailsToDOM(adventure) {
   document.getElementById("adventure-subtitle").textContent = adventure.subtitle
   document.getElementById("adventure-content").textContent = adventure.content
   let DOMimages = document.getElementById("photo-gallery")
-  // let images =  adventure.images
+  let images =  adventure.images
 
-  // images.forEach(img => {
-  //   let im = document.createElement("img")
-  //   im.setAttribute("src",img)
-  //   im.className = "activity-card-image"
-  //   // im.setAttribute("height",100)
-  //   // im.setAttribute("width",100)
-  //   DOMimages.append(im)
-  // })
+  images.forEach(img => {
+    let im = document.createElement("img")
+    im.setAttribute("src",img)
+    im.className = "activity-card-image"
+    // im.setAttribute("height",100)
+    // im.setAttribute("width",100)
+    DOMimages.append(im)
+  })
   
   
 
@@ -109,8 +109,6 @@ images.map( (img,index) => {
   im.className = "image-responsive"
   im.setAttribute("height",500)
   im.setAttribute("width",800)
-
-  
 
   carouselItem.append(im)
   carosuelIndicator.append(controlButton)
