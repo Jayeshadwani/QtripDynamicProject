@@ -133,7 +133,9 @@ control2.innerHTML = '<span class="carousel-control-next-icon" aria-hidden="true
 carousel.append(carosuelIndicator,carouselInner)
 carousel.append(control,control2)
 
-document.getElementById("photo-gallery").append(carousel)
+let photo = document.getElementById("photo-gallery")
+photo.innerHTML = ""
+photo.append(carousel)
 // console.log(document.getElementById("photo-gallery"))
 
 // console.log(carousel)
