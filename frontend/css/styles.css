@@ -241,6 +241,8 @@ input[type="number"] {
   display: none;
 }
 .reservation-visit-button {
+  border:none;
+  /* font-size:14px; */
   background-color: rgb(255, 145, 0);
   color: #fff;
   display: flex;
