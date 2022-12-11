@@ -47,26 +47,31 @@ function addAdventureToDOM(adventures) {
 
     let colDiv = document.createElement("div")
     colDiv.className = "col-lg-3 col-6 mb-4 p-3"
-    colDiv.innerHTML = `<a href="detail/?adventure=${key.id}" id=${key.id}>
-    <div class="activity-card">
-    <div class="category-banner">${key.category}</div>  
-        <img
-          class="img-responsive activity-card-image"
-          src=${key.image}
-        />
+    colDiv.setAttribute("style","overflow:visible")
+    colDiv.innerHTML = `
 
-        <div class="activity-card-text text-md-center w-100 mt-3">
-          <div class="d-block d-md-flex justify-content-between flex-wrap pl-3 pr-3">
-            <h5 class="text-left ">${key.name}</h5>
-            <p>₹${key.costPerHead}</p>
-          </div>
+    
+    <div class="category-banner">${key.category}</div>  
+      <a href="detail/?adventure=${key.id}" id=${key.id}>
+      <div class="activity-card">
+          <img
+            class="img-responsive activity-card-image"
+            src=${key.image}
+          />
+
+          <div class="activity-card-text text-md-center w-100 mt-3">
             <div class="d-block d-md-flex justify-content-between flex-wrap pl-3 pr-3">
-            <h5 class="text-left">Duration</h5>
-            <p>${key.duration} Hours</p>
+              <h5 class="text-left ">${key.name}</h5>
+              <p>₹${key.costPerHead}</p>
+            </div>
+              <div class="d-block d-md-flex justify-content-between flex-wrap pl-3 pr-3">
+              <h5 class="text-left">Duration</h5>
+              <p>${key.duration} Hours</p>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    
   `;
 
   document.getElementById("data").append(colDiv);

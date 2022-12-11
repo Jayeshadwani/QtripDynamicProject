@@ -186,7 +186,7 @@ footer {
 }
 
 .category-banner {
-  position: absolute;
+  position: relative;
   /* height: 50px; */
   /* flex:1; */
   padding: 5px 10px;
@@ -194,13 +194,16 @@ footer {
   /*
   box-shadow: 0px 9.4px 20.4px rgba(0, 0, 0, 0.13),
     0px 9.2px 20.6px rgba(0, 0, 0, 0.1); */
-  /* width:60%; */
-  min-width: 50%;
+  /* right: 0%; */
+  left:135px;
+  /* right: 0; */
+  top:13%;
+  width:50%;
+  z-index: 1;
+  /* min-width: 50%; */
   color: #fff;
   background: rgb(255, 145, 0);
-  top: 0;
-  right: 0;
-  z-index: 1;
+  /* z-index: 1; */
   margin-top: 16px;
   margin-right: 8px;
   display: flex;
